@@ -1,0 +1,521 @@
+/* ================================
+   GLOBAL
+================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5eee2;
+  color: #1f2937;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+  width: 100%;
+  height: 78px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fffaf2;
+  border-bottom: 1px solid #eadfce;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  color: #744524;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links button {
+  border: none;
+  background: transparent;
+  color: #3d2a1d;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 4px;
+}
+
+.nav-links button:hover {
+  color: #744524;
+}
+
+.nav-links .login-btn {
+  background: #744524;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+.nav-links .login-btn:hover {
+  background: #5f371e;
+  color: white;
+}
+
+/* ================================
+   HOME HERO
+================================ */
+
+.hero {
+  min-height: 560px;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  background: #744524;
+  color: white;
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.welcome {
+  margin: 0 0 25px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 68px;
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.hero-content > p:not(.welcome) {
+  margin: 30px 0;
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 580px;
+}
+
+.start-btn {
+  border: none;
+  background: #fffaf2;
+  color: #744524;
+  padding: 17px 32px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.start-btn:hover {
+  background: #f1e5d5;
+}
+
+.hero-card {
+  width: 390px;
+  min-height: 315px;
+  padding: 50px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.code-icon {
+  font-size: 62px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-card h2 {
+  margin: 0 0 12px;
+  font-size: 28px;
+}
+
+.hero-card p {
+  margin: 0;
+  font-size: 17px;
+}
+
+/* ================================
+   FEATURED COURSE
+================================ */
+
+.featured {
+  padding: 90px 8%;
+  background: #f5eee2;
+  text-align: center;
+}
+
+.featured > p {
+  margin: 0 0 20px;
+  color: #744524;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.featured > h2 {
+  margin: 0 0 55px;
+  font-size: 46px;
+  color: #1f2937;
+}
+
+/* ================================
+   COURSE CARD
+================================ */
+
+.course-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fffaf2;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(70, 45, 25, 0.12);
+}
+
+.course-image {
+  background: #744524;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: 800;
+}
+
+.course-info {
+  padding: 45px;
+  text-align: left;
+}
+
+.course-info h2 {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+
+.course-info p {
+  line-height: 1.6;
+}
+
+.course-info button {
+  margin-top: 15px;
+}
+
+/* ================================
+   COMMON BUTTONS
+================================ */
+
+.simple-page button,
+.course-info button,
+.auth-card button {
+  border: none;
+  background: #744524;
+  color: white;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.simple-page button:hover,
+.course-info button:hover,
+.auth-card button:hover {
+  background: #5f371e;
+}
+
+/* ================================
+   SIMPLE PAGES
+================================ */
+
+.simple-page {
+  min-height: 100vh;
+  padding: 70px 8%;
+  background: #f5eee2;
+  text-align: center;
+}
+
+.simple-page > h1 {
+  margin: 0 0 20px;
+  color: #3d2a1d;
+  font-size: 42px;
+}
+
+.simple-page > p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.simple-page > button {
+  margin: 10px;
+}
+
+/* ================================
+   LESSONS
+================================ */
+
+.simple-page:has(.lesson-card) {
+  padding: 60px 10%;
+}
+
+.simple-page:has(.lesson-card) > h1 {
+  margin-bottom: 35px;
+}
+
+.lesson-card {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 145px;
+  margin: 0 auto 28px;
+  padding: 32px 38px;
+  background: #fffaf2;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(70, 45, 25, 0.08);
+  text-align: left;
+}
+
+.lesson-card h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #1f2937;
+}
+
+.lesson-card a {
+  display: inline-block;
+  text-decoration: none;
+  background: #744524;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.lesson-card a:hover {
+  background: #5f371e;
+}
+
+.simple-page:has(.lesson-card) > button {
+  margin-top: 10px;
+}
+
+/* ================================
+   LOGIN / REGISTER
+================================ */
+
+.auth-page {
+  min-height: 100vh;
+  padding: 70px 20px;
+  background: #f5eee2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 45px;
+  background: #fffaf2;
+  border-radius: 20px;
+  box-shadow: 0 15px 45px rgba(70, 45, 25, 0.12);
+  text-align: center;
+}
+
+.auth-card h1 {
+  margin: 0 0 10px;
+  color: #3d2a1d;
+  font-size: 34px;
+}
+
+.auth-card > p {
+  color: #6b5a4a;
+}
+
+.message {
+  margin: 20px 0;
+  padding: 12px;
+  background: #efe1d0;
+  color: #5f371e;
+  border-radius: 8px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #d8c7b3;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  background: white;
+}
+
+.auth-card input:focus {
+  border-color: #744524;
+}
+
+.auth-card form button {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.switch-text {
+  margin-top: 25px;
+}
+
+.switch-text button {
+  padding: 0;
+  background: transparent;
+  color: #744524;
+  font-weight: 700;
+}
+
+.switch-text button:hover {
+  background: transparent;
+  color: #5f371e;
+}
+
+.auth-card .back-btn {
+  margin-top: 20px;
+  background: transparent;
+  color: #744524;
+  border: 1px solid #744524;
+}
+
+.auth-card .back-btn:hover {
+  background: #744524;
+  color: white;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .hero {
+    padding: 60px 7%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 390px;
+  }
+
+  .course-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 55px 25px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-content > p:not(.welcome) {
+    font-size: 17px;
+  }
+
+  .featured {
+    padding: 60px 25px;
+  }
+
+  .featured > h2 {
+    font-size: 34px;
+  }
+
+  .lesson-card {
+    padding: 25px;
+    min-height: 130px;
+  }
+
+  .lesson-card h2 {
+    font-size: 20px;
+  }
+
+  .auth-card {
+    padding: 30px 22px;
+  }
+}
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+  width: 100%;
+  padding: 35px 20px;
+  background: #fffaf2;
+  border-top: 1px solid #eadfce;
+  text-align: center;
+}
+
+.footer .logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: #744524;
+  text-align: center;
+  margin: 0 auto;
+}
